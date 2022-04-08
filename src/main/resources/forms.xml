@@ -1,0 +1,12 @@
+<List>
+    <item>
+        <id>0</id>
+        <content>Test1</content>
+        <title>Das ist ein Test</title>
+    </item>
+    <item>
+        <id>1</id>
+        <content>Test2</content>
+        <title>Hallo Welt</title>
+    </item>
+</List>

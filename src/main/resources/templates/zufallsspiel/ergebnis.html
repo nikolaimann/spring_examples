@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Zufallsspiel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Ergebnis</h1>
+<div>
+    <p th:text="'Versuche: ' + ${zufallsspiel.versuche}"></p>
+    <p th:text="'Eingabe Spieler: ' + ${zufallsspiel.zufallszahl}" />
+    <p th:text="'Ergebnis: ' + ${zufallsspiel.ergebnis}" />
+</div>
+<a href="/zufallsspiel">Weiterraten</a>
+<a href="/zufallsspielneu">Neustarten</a>
+</body>
+</html>

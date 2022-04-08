@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Zufallsspiel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Zufallsspiel</h1>
+    <div>
+        <form action="#" th:action="@{/zufallsspiel}" th:object="${zufallsspiel}" method="post">
+            <p>Zufallszahl: <input type="text" th:field="*{zufallszahl}" placeholder="Gebe eine ganze Zahl zwischen 1-100 ein" /></p>
+            <p><input type="submit" value="Absenden" /> <input type="reset" value="Zurücksetzen" /></p>
+        </form>
+    </div>
+</body>
+</html>

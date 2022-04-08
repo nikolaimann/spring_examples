@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Nutzdaten xmlns:mit="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-MIT/1.3" xmlns:par="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-PAR/1.3" xmlns="http://www.gkv-datenaustausch.de/xml-schema/EEBZ0-DAT/1.3" xmlns:zer="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ZER/1.3" xmlns:ant="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ANT/1.3" xmlns:kbr="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KBR/1.3" xmlns:feh="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-FEH/1.3" xmlns:bas="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-basis/1.3" xmlns:kgl="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KGL/1.3" xmlns:anw="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ANW/1.3" xmlns:kfo="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KFO/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" softwarename_und_version="1.0.9" kim_adresse_zahnarzt="onboard-test-21@arv.kim.telematik-test" ik_krankenkasse="101575519" erstellungsdatum="20211012" erstellungszeit="09:00:12" verfahrenskennzeichen="TEBZ0" logische_version="1.2.0" nachrichtentyp="ANW">
+    <Antwort>
+        <anw:Verarbeitungskennzeichen>10</anw:Verarbeitungskennzeichen>
+        <anw:Antragsnummer_Mitteilungsnummer>0300099992108KF00002N100000002</anw:Antragsnummer_Mitteilungsnummer>
+        <anw:Antwortkennzeichen>1</anw:Antwortkennzeichen>
+        <anw:Datum_der_Entscheidung>20211012</anw:Datum_der_Entscheidung>
+        <anw:Angaben_zur_Bewilligung_von_KFO>
+            <anw:Zuschuss_KFO>90</anw:Zuschuss_KFO>
+            <anw:Anspruchsbeginn>2021-3</anw:Anspruchsbeginn>
+        </anw:Angaben_zur_Bewilligung_von_KFO>
+    </Antwort>
+</Nutzdaten>

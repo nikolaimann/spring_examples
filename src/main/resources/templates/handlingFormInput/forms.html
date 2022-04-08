@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Tabelle mit allen Einträgen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Das Auslesen aller Einträge</h1>
+    <a href="/form" id="add_entry">Eintrag hinzufügen</a>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Titel</th>
+            <th>Nachricht</th>
+        </tr>
+        <tr th:each="form: ${forms}">
+            <td th:text="${form.id}" />
+            <td th:text="${form.title}" />
+            <td th:text="${form.content}" />
+            <td id="buttons">
+                <a th:href="@{/delete_entry(id=${form.id})}" id="delete_entry">Löschen</a>
+                <a th:href="@{/edit_entry(id=${form.id})}" id="edit_entry">Ändern</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?><html lang="de" xmlns="http://www.w3.org/1999/xhtml" xmlns:mit="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-MIT/1.3" xmlns:kbr="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KBR/1.3" xmlns:zer="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ZER/1.3" xmlns:feh="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-FEH/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bas="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-basis/1.3" xmlns:anw="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ANW/1.3" xmlns:par="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-PAR/1.3" xmlns:kgl="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KGL/1.3" xmlns:ant="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-ANT/1.3" xmlns:dat="http://www.gkv-datenaustausch.de/xml-schema/EEBZ0-DAT/1.3" xmlns:kfo="http://www.gkv-datenaustausch.de/XMLSchema/EEBZ0-KFO/1.3"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ANW</title><style>
+				html,body{
+						height:297mm;
+						width:210mm;
+						max-width:210mm;
+					}
+					html {
+						height: 100%;
+					}
+					body {
+						padding-left:2em;
+						margin-top:1em;
+						height: 100%;
+					}
+					p {
+						font-family: "Courier New", "Nimbus Mono L", monospace;
+						font-size: small;
+					}
+					h4 {
+						font-size: 10pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+						padding:0;
+						margin:0 0 5mm 0;
+					}		
+					h3 {
+						margin:0;
+						padding:0;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					table {
+						border-collapse:collapse;
+						margin-top:2em;
+					}
+					#personalienfeld {
+						border-spacing:1px;
+					}
+					#tab_erl_befund {
+						max-width:90mm;
+					}
+					#tab_erl_befund td {
+						vertical-align:top;
+					}
+					#letzte_seite {
+						padding: 2em;
+					}
+					.in-black {
+						font-size: 7pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.tiny {
+						font-size: 6pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.info {
+						font-size: 8pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.stempel {
+						font-family: "Courier New", "Nimbus Mono L", monospace;
+						font-size: 10pt;
+					}
+					.daten {
+						font-family: "Courier New", "Nimbus Mono L", monospace;
+						font-size: 12pt;
+					}
+					.nowrap {
+						white-space: nowrap;
+					}
+					.overflow {
+						overflow:hidden;
+					}
+					.thin-space {
+						font-size: 12pt;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.groesse2, h2 {
+						font-size: 14pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+						padding:0;
+						margin:0;
+					}
+					.groesse3, h4 {
+						font-size: 10pt;
+						color: #000000;
+						font-weight: normal;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.hervorgehoben3 {
+						font-size: 10pt;
+						color: #000000;
+						font-weight: bold;
+						font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+					}
+					.status {
+						font-family: "Courier New", "Nimbus Mono L", monospace;
+						font-size: 9pt;
+						word-spacing:"-0.3em"
+					}
+					.hidden {
+						display: none;
+					}
+					.hg_weiss {
+						background-color: white;
+					}
+					.umrandet {
+						border: 1px solid rgb(236,94,168);
+					}
+					.hintergrund {
+						background-color:rgb(253,238,243);
+						max-width:100%;
+						
+					}
+					.text_links {
+						text-align:left;
+					}
+					.text_rechts {
+						text-align:right;
+					}
+					.text_mittig {
+						text-align:center;
+					}
+					.fliessend {
+						float:left;
+					}
+					.breitenlimit {
+						max-width:210mm;
+						align:center;
+					}
+					.hohe_zeile {
+						height:10mm;
+					}
+					.kaestchen {
+						display: inline-flex;
+						font-size:5mm;
+						font-weight: normal;
+						line-height:0.7;
+						align:center;
+						vertical-align:middle;
+					}
+					.abstand_rechts {
+						margin-right:1mm;
+					}
+					.abstand_oben {
+						margin-top:5mm;
+					}
+					@media screen {
+						
+							.formularhintergrund {
+								fill:#ffffff;	/* zum Test */
+								fill:#fde6f4;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.hg_dunkel {
+								fill:#cccccc;	/* zum Test */
+								fill:#fbcce8;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.hg_hell {
+								fill:#eeeeee;	/* zum Test */
+								fill:#fde6f4;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.textfarbe_formular {
+								fill:#000000;	/* zum Test */
+								fill:#ec008c;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.tabellenzeile {
+								stroke:#eeeeee;	/* zum Test */
+								stroke:#fde6f4;
+							}
+							.formularlinie {
+								stroke:#000000;	/* zum Test */
+								stroke:#ec008c;
+							}
+						
+					}
+					@media print {
+						
+							.formularhintergrund {
+								fill:#ffffff;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.hg_dunkel {
+								fill:#cccccc;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.hg_hell {
+								fill:#eeeeee;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.textfarbe_formular {
+								fill:#333333;
+								fill-opacity:1;
+								fill-rule:evenodd;
+								stroke:none;
+							}
+							.tabellenzeile {
+								stroke:#eeeeee;
+							}
+							.formularlinie {
+								stroke:#333333;
+							}		
+							.rahmen {
+								fill:#ffffff !important;
+								fill-opacity: 1 !important;
+								fill-rule: evenodd !important;
+								stroke:#333333 !important;
+								stroke-width:0.25 !important;
+							}										
+						
+						@page {
+							size: A4;
+							margin: 0;
+						}
+						body {
+							margin: 0;
+							padding: 0;
+						}
+						.pb {
+							page-break-before: always;
+						}
+						.hintergrund {
+							background-color:#eeeeee;
+							max-width:100%;
+						}						
+					}
+				</style></head><body><p>Verarbeitungskennzeichen: 
+					
+					Änderung der Genehmigung durch die Krankenkasse wegen nachträglicher Änderung der Bonusstufe/Härtefall (ZE)
+						</p><p>Antragsnummer Mitteilungsnummer: 0300099992103ZE000000100122540</p><p>Antwortkennzeichen:
+					
+					Genehmigt
+						</p><p>Datum der Entscheidung:
+						09.09.2021</p><p>Angaben zur Bewilligung von Zahnersatz:</p><ul><li>Zuschusshöhe:
+						100% / (nur für Antwortdatensatz)
+				</li><li>Härtefall:1</li><li>Festzuschüsse: 
+							<ul><li>Befund für Festzuschuss:
+					<ul><li>Befundnummer: 1.1</li><li>Anzahl: 2</li><li>Festzuschussbetrag: 664,18€</li></ul></li><li>Befund für Festzuschuss:
+					<ul><li>Befundnummer: 1.3</li><li>Anzahl: 2</li><li>Festzuschussbetrag: 226,58€</li></ul></li><li>Befund für Festzuschuss:
+					<ul><li>Befundnummer: 3.1</li><li>Anzahl: 1</li><li>Festzuschussbetrag: 782,56€</li></ul></li></ul></li><li>Summe Festzuschussbeträge:
+						1673,32€
+		</li></ul></body></html>

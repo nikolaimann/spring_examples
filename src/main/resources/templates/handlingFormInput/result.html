@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Getting Started: Handling Form Submission</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Ergebnis</h1>
+<div>
+  <p th:text="'ID: ' + ${form.id}" />
+  <p th:text="'Titel: ' + ${form.title}" />
+  <p th:text="'Nachricht: ' + ${form.content}" />
+</div>
+<a href="/form">Eintrag hinzufügen</a>
+<a href="/forms">Alle Einträge anzeigen</a>
+</body>
+</html>

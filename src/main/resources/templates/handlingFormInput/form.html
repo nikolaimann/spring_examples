@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Auslesen von Formeingaben</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Das Auslesen von Formeingaben</h1>
+    <form action="#" th:action="@{/form}" th:object="${form}" method="post">
+        <p>ID: <input type="text" th:field="*{id}" /></p>
+        <p>Title: <input type="text" th:field="*{title}" placeholder="Schreibe hier einen Titel" ></p>
+        <p>Nachricht: <input type="text" th:field="*{content}" placeholder="Schreibe hier eine Nachricht" /></p>
+        <p><input type="submit" value="Speichern" /> <input type="reset" value="Zurücksetzen" /></p>
+    </form>
+</body>
+</html>

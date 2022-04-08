@@ -1,0 +1,267 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+  <head>
+    <title>Test Document</title>
+    <style>
+      svg {
+        font-family: Arial;
+        stroke: #231f20;
+        stroke-width: 0.282916;
+      }
+
+      rect {
+        fill: none;
+      }
+
+      .feld_titel {
+        stroke: none;
+        font-size: 6px;
+      }
+
+      .feld_inhalt {
+        font-size: 12px;
+        line-height: 1.25;
+        font-family: "Courier New";
+        stroke: none;
+      }
+
+      .trenner {
+        stroke-width: 1;
+      }
+
+      .linie {
+        stroke: #e9e9e9;
+        stroke-width: 1;
+      }
+
+      .kreuz {
+        stroke: black;
+        stroke-width: 2.5;
+      }
+
+      .ueberschrift {
+        font-weight: bold;
+        font-size: 9px;
+        stroke: none;
+      }
+
+      .kleiner {
+        font-size: 10px;
+      }
+
+      .titel {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .tabelle {
+        text-align: center;
+        line-height: 0.92;
+        border-collapse: collapse;
+        width: 720;
+      }
+
+      .tabelle td:last-child {
+          text-align: left;
+      }
+
+      .tabelle td {
+        border-bottom: 1px solid #e9e9e9;
+        border-right: 1px solid #e9e9e9;
+        padding-left: 3px;
+      }
+
+      .tabelle td:last-child {
+        border-right: none;
+      }
+
+      .summe tr:nth-last-child(2) td {
+        border-bottom: 0.15em solid #231f20;
+      }
+
+      .summe tr:last-child td {
+        border-bottom: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <svg width="793.7" height="1111.51" viewBox="0 0 793.7 1111.51">
+      <rect x="0" y="0" width="793.7" height="1111.5" style="fill: none; stroke:#000000;"></rect>
+      
+      <!-- Obere Box-->
+      <text x="500" y="100" class="titel">Antwortdaten</text>
+      <text x="500" y="130" class="titel">(ANW)</text>
+
+      <g id="obere_box">
+        <rect x="34" y="20" width="302" height="177" />
+
+        <text x="37" y="27" class="feld_titel">
+          Antragsnummer / Mitteilungsnummer
+        </text>
+        <text x="37" y="45" class="feld_inhalt">
+          0300099992108KF00002N100000002
+        </text>
+
+        <line x1="34" y1="55" x2="336" y2="55" />
+        <text x="37" y="62" class="feld_titel">Verarbeitungskennzeichen</text>
+        <foreignObject x="37" y="57" width="302" height="302">
+          <p class="feld_inhalt" style="line-height: 1.25">
+            Änderung der Genehmigung durch die Krankenkasse wegen nachträglicher
+            Änderung der Bonusstufe/Härtefall (ZE)
+          </p>
+        </foreignObject>
+        <line x1="34" y1="120" x2="336" y2="120" />
+        <text x="37" y="127" class="feld_titel">Antwortkennzeichen:</text>
+
+        <!--Ankreuzboxen-->
+        <rect x="40" y="140" width="20" height="20" />
+        <text x="70" y="155" class="feld_inhalt">Genehmigt</text>
+        <rect x="150" y="140" width="20" height="20" />
+        <text x="180" y="155" class="feld_inhalt">nicht genehmigt</text>
+
+        <!--TODO: Kreuz an die richtige Stelle setzen-->
+        <line x1="40" y1="160" x2="60" y2="140" class="kreuz" />
+        <line x1="40" y1="140" x2="60" y2="160" class="kreuz" />
+
+        <line x1="150" y1="160" x2="170" y2="140" class="kreuz" />
+        <line x1="150" y1="140" x2="170" y2="160" class="kreuz" />
+
+
+        <line x1="34" y1="168" x2="336" y2="168" />
+        <text x="37" y="175" class="feld_titel">Datum der Entscheidung</text>
+        <text x="37" y="190" class="feld_inhalt">12.10.21</text>
+        <line x1="120" y1="185" x2="120" y2="197" />
+
+        <text x="130" y="175" class="feld_titel">Endedatum</text>
+        <text x="130" y="190" class="feld_inhalt">04.08.24</text>
+      </g>  
+      <!-- TODO: Relativespositionieren-->
+      <!-- Begründungen -->
+      <svg x="57" y="220">
+        <line x1="0" y1="0" x2="782" y2="0" class="trenner" />
+        <svg>
+          <text y="10" class="ueberschrift">Begründungen:</text>
+          <foreignObject y="20" width="720" height="300">
+            <table class="tabelle feld_inhalt">
+              <tr>
+                <td>- nicht richtlinienkonform</td>
+              </tr>
+              <tr>
+                <td>- Sontstiges, siehe Erläuterung</td>
+              </tr>
+            </table>
+          </foreignObject>
+          <!--
+          <line y1="30" x2="720" y2="30" class="linie" />
+          <line y1="45" x2="720" y2="45" class="linie" />
+          <line y1="60" x2="720" y2="60" class="linie" />
+          <text y="27" class="feld_inhalt kleiner">
+            nicht richtlinienkonform, Sonstiges, siehe Erläuterung
+          </text>
+        -->
+        </svg>
+        <svg y="70">
+          <text y="8" class="ueberschrift">Erläuterungen:</text>
+          <line y1="30" x2="720" y2="30" class="linie" />
+          <line y1="45" x2="720" y2="45" class="linie" />
+          <line y1="60" x2="720" y2="60" class="linie" />
+          <foreignObject y="5" width="720" height="300">
+            <p class="feld_inhalt">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet.
+            </p>
+          </foreignObject>
+        </svg>
+      </svg>
+    
+    <!--Angaben zur Bewilligung von Zahnersatz--
+    <svg x="57" y="220">
+      <line x1="0" y1="0" x2="720" y2="0" class="trenner" />
+      <svg>
+        <text y="10" class="ueberschrift">Angaben zur Bewilligung von Zahnersatz:</text>
+        <text y="20" class="ueberschrift">Zuschusshöhe: 60% / unbekannt</text>
+
+        !--Tabelle-->
+        <!--TODO: Dynamisches erweitern der Tabelle-->
+        <!--<text y="40" class="feld_inhalt kleiner"><tspan>Befunds-</tspan><tspan x="0" y="50">nummer</tspan></text>
+        <line x1="50" y1="30" x2="50" y2="130" />
+        <text x="55" y="50" class="feld_inhalt kleiner">Anz.</text>
+        <line x1="80" y1="30" x2="80" y2="130"/>
+        <text x="85" y="50" class="feld_inhalt kleiner">Festzuschussbetrag</text>
+        <line x1="0" y1="130" x2="782" y2="130" class="trenner"/>
+        <text x="0" y="142" class="ueberschrift">Summe Festzuschussbeträge: </text>
+        -->
+        <!--Ankreuzboxen--><!--
+        <text x="500" y="20" class="ueberschrift">Härtefall</text>
+        <rect x="550" y="10" width="15" height="15" />
+        <text x="575" y="20" class="feld_inhalt kleiner">ja</text>
+        <rect x="625" y="10" width="15" height="15" />
+        <text x="650" y="20" class="feld_inhalt kleiner">nein</text>
+
+        <line x1="550" y1="10" x2="565" y2="25" class="kreuz" />
+        <line x1="550" y1="25" x2="565" y2="10" class="kreuz" />
+
+        <line x1="625" y1="10" x2="640" y2="25" class="kreuz" />
+        <line x1="625" y1="25" x2="640" y2="10" class="kreuz" />
+        
+        <foreignObject x="0" y="35" width="720" height="1000">
+          <table class="feld_inhalt tabelle summe"> 
+
+            <tr class="kleiner">
+              <td width=100>Befundsnummer</td>
+              <td width=32>Anz.</td>
+              <td>Festzuschussbetrag</td>
+            </tr>
+
+            <tr>
+              <td>1.1</td>
+              <td>6</td>
+              <td>1195,5€</td>
+            </tr>
+            <tr>
+              <td>1.3</td>
+              <td>5</td>
+              <td>339,85€</td>
+            </tr>
+            <tr>
+              <td>3.1</td>
+              <td>1</td>
+              <td>469,54€</td>
+            </tr>
+            <tr>
+              <td>21.11</td>
+              <td>99</td>
+              <td>11956,56€</td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="kleiner">Summe Zuschussbeträge</td>
+              <td style="font-weight: bold;">13961,45€</td>
+            </tr>
+          </table>
+        </foreignObject>
+      </svg>
+    </svg>
+  -->
+  <!--
+    Angaben zur Bewilligung von KFO
+    <svg x="57" y="220">
+      <line x1="0" y1="0" x2="720" y2="0" class="trenner" />
+      <svg>
+        <text y="10" class="ueberschrift">Angaben zur Bewilligung von KFO:</text>
+        <line y1="30" x2="720" y2="30" class="linie" />
+        <line y1="45" x2="720" y2="45" class="linie" />
+        <line y1="60" x2="720" y2="60" class="linie" />
+
+        <text y="27" class="feld_inhalt kleiner">Zuschuss KFO: 90</text>
+        <text y="42" class="feld_inhalt kleiner">Anspruchsbeginn: 3. Quatal 2021</text>
+      </svg>
+    </svg>
+  -->
+
+    </svg>
+  </body>
+</html>
